@@ -98,8 +98,7 @@ public class ConfigCompletionProvider extends CompletionProvider<CompletionParam
   public static PsiElementPattern.Capture<LeafPsiElement> getPlace() {
     return PlatformPatterns
         .psiElement(LeafPsiElement.class)
-        .withParent(StringLiteralExpression.class)
-        .withLanguage(PhpLanguage.INSTANCE);
+        .withParent(StringLiteralExpression.class);
   }
 
   private static class ConfigLookupElement extends LookupElement {

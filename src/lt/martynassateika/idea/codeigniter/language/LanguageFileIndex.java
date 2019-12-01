@@ -87,7 +87,7 @@ public class LanguageFileIndex extends FileBasedIndexExtension<String, Void> {
   @NotNull
   @Override
   public InputFilter getInputFilter() {
-    return new DefaultFileTypeSpecificInputFilter(PhpFileType.INSTANCE);
+    return new DefaultFileTypeSpecificInputFilter();
   }
 
   @Override

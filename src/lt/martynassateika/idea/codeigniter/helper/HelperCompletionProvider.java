@@ -109,8 +109,7 @@ public class HelperCompletionProvider extends CompletionProvider<CompletionParam
     // helper(array('foo', 'bar', 'baz'))
     return PlatformPatterns
         .psiElement(LeafPsiElement.class)
-        .withParent(StringLiteralExpression.class)
-        .withLanguage(PhpLanguage.INSTANCE);
+        .withParent(StringLiteralExpression.class);
   }
 
 }

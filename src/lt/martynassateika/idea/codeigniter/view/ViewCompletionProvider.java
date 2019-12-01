@@ -108,8 +108,7 @@ public class ViewCompletionProvider extends CompletionProvider<CompletionParamet
         .psiElement(LeafPsiElement.class)
         .withParent(StringLiteralExpression.class)
         .withSuperParent(2, ParameterList.class)
-        .withSuperParent(3, FunctionReference.class)
-        .withLanguage(PhpLanguage.INSTANCE);
+        .withSuperParent(3, FunctionReference.class);
   }
 
 }
