@@ -75,14 +75,14 @@
   <extensions defaultExtensionNs="com.intellij">
     <inspectionToolProvider
       implementation="lt.martynassateika.idea.codeigniter.inspection.CiInspectionToolProvider"/>
-    <completion.contributor language="PHP"
-      implementationClass="lt.martynassateika.idea.codeigniter.contributor.MyCompletionContributor"/>
+    <completion.contributor
+            implementationClass="lt.martynassateika.idea.codeigniter.contributor.MyCompletionContributor"/>
 
     <!-- Configuration -->
     <fileBasedIndex
       implementation="lt.martynassateika.idea.codeigniter.config.ConfigFileIndex"/>
-    <psi.referenceContributor language="PHP"
-      implementation="lt.martynassateika.idea.codeigniter.config.ConfigReferenceContributor"/>
+    <psi.referenceContributor
+            implementation="lt.martynassateika.idea.codeigniter.config.ConfigReferenceContributor"/>
 
     <!-- Helpers -->
     <psi.referenceContributor
@@ -91,18 +91,22 @@
     <!-- Language helper -->
     <fileBasedIndex
       implementation="lt.martynassateika.idea.codeigniter.language.LanguageFileIndex"/>
-    <psi.referenceContributor language="PHP"
-      implementation="lt.martynassateika.idea.codeigniter.language.LanguageReferenceContributor"/>
-    <lang.foldingBuilder language="PHP"
-      implementationClass="lt.martynassateika.idea.codeigniter.language.LanguageFoldingBuilder"/>
+    <psi.referenceContributor
+            implementation="lt.martynassateika.idea.codeigniter.language.LanguageReferenceContributor"/>
+    <lang.foldingBuilder
+            implementationClass="lt.martynassateika.idea.codeigniter.language.LanguageFoldingBuilder"/>
 
     <!-- Models -->
-    <psi.referenceContributor language="PHP"
-      implementation="lt.martynassateika.idea.codeigniter.model.ModelReferenceContributor"/>
+    <psi.referenceContributor
+            implementation="lt.martynassateika.idea.codeigniter.model.ModelReferenceContributor"/>
 
     <!-- Views -->
     <psi.referenceContributor
       implementation="lt.martynassateika.idea.codeigniter.view.ViewReferenceContributor"/>
+
+    <!-- Forms -->
+    <psi.referenceContributor
+            implementation="lt.martynassateika.idea.codeigniter.form.FormReferenceContributor"/>
 
     <projectConfigurable id="CodeIgniter.SettingsConfigurable"
       instance="lt.martynassateika.idea.codeigniter.ui.CodeIgniterSettingsConfigurable"
