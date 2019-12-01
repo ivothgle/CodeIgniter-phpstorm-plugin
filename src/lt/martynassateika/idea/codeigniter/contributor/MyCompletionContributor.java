@@ -19,6 +19,7 @@ package lt.martynassateika.idea.codeigniter.contributor;
 import com.intellij.codeInsight.completion.CompletionContributor;
 import com.intellij.codeInsight.completion.CompletionType;
 import lt.martynassateika.idea.codeigniter.config.ConfigCompletionProvider;
+import lt.martynassateika.idea.codeigniter.form.FormCompletionProvider;
 import lt.martynassateika.idea.codeigniter.helper.HelperCompletionProvider;
 import lt.martynassateika.idea.codeigniter.language.LanguageCompletionProvider;
 import lt.martynassateika.idea.codeigniter.model.ModelCompletionProvider;
@@ -38,6 +39,7 @@ public class MyCompletionContributor extends CompletionContributor {
     extend(CompletionType.BASIC, LanguageCompletionProvider.getPlace(),
         new LanguageCompletionProvider());
     extend(CompletionType.BASIC, ModelCompletionProvider.getPlace(), new ModelCompletionProvider());
+    extend(CompletionType.BASIC, FormCompletionProvider.getPlace(), new FormCompletionProvider());
     extend(CompletionType.BASIC, ViewCompletionProvider.getPlace(), new ViewCompletionProvider());
   }
 
